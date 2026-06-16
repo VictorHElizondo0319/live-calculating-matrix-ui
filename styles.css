@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.info {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.info p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.error-message {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #fee;
+    border: 1px solid #fcc;
+    border-radius: 4px;
+    color: #c33;
+    font-weight: 500;
+    text-align: center;
+}
+
+.error-message.hidden {
+    display: none;
+}
+
+.grid-container {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.spreadsheet {
+    display: grid;
+    grid-template-columns: 50px repeat(10, 100px);
+    grid-template-rows: 40px repeat(10, 40px);
+    gap: 0;
+    border: 2px solid #ddd;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cell {
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    transition: all 0.2s ease;
+}
+
+.cell:hover:not(.header):not(.row-header) {
+    background-color: #f0f8ff;
+}
+
+.cell.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.cell.row-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.cell.corner {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.cell-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    background-color: transparent;
+    outline: none;
+}
+
+.cell.editing {
+    background-color: #fffacd;
+    border: 2px solid #667eea;
+    box-shadow: 0 0 8px rgba(102, 126, 234, 0.3);
+}
+
+.cell.has-formula {
+    background-color: #f0f8ff;
+}
+
+.cell.error {
+    background-color: #fee;
+    color: #c33;
+}
+
+.cell-display {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-size: 0.9em;
+    cursor: text;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    .spreadsheet {
+        grid-template-columns: 40px repeat(10, 80px);
+        grid-template-rows: 35px repeat(10, 35px);
+    }
+}
