@@ -1,6 +1,12 @@
 # Live-Calculating Matrix UI
 
-A web-based spreadsheet application with real-time formula evaluation and circular dependency detection.
+A professional web-based spreadsheet application with real-time formula evaluation and circular dependency detection.
+
+**Live Demo:** [View on GitHub Pages](https://victorhelizondo0319.github.io/live-calculating-matrix/)
+
+![Live-Calculating Matrix Screenshot](https://img.shields.io/badge/status-active-success)
+![JavaScript](https://img.shields.io/badge/javascript-ES6+-yellow)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
 ## Features
 
@@ -178,6 +184,27 @@ SpotGammaAssignment/
 └── README.md       # Documentation
 ```
 
+## Deployment
+
+This application is deployed on GitHub Pages. See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment instructions.
+
+**Quick Deploy:**
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/VictorHElizondo0319/live-calculating-matrix.git
+git push -u origin main
+```
+
+Then enable GitHub Pages in repository Settings.
+
+## Author
+
+**Victor H Elizondo**
+- GitHub: [@VictorHElizondo0319](https://github.com/VictorHElizondo0319)
+- Email: victor.elizondo.19930319@gmail.com
+
 ## License
 
-This project is created for the SpotGamma assignment.
+MIT License - This project is created for the SpotGamma assignment.
