@@ -2,7 +2,7 @@
 
 A professional web-based spreadsheet application with real-time formula evaluation and circular dependency detection.
 
-**Live Demo:** [View on GitHub Pages](https://victorhelizondo0319.github.io/live-calculating-matrix/)
+**Live Demo:** [View on GitHub Pages](https://victorhelizondo0319.github.io/live-calculating-matrix-ui/)
 
 ![Live-Calculating Matrix Screenshot](https://img.shields.io/badge/status-active-success)
 ![JavaScript](https://img.shields.io/badge/javascript-ES6+-yellow)
